@@ -13,12 +13,14 @@ Engine.h
 /Users/michailalmyros/CLionProjects/pacman/Engine.h
 string
 -
+cstdlib
+-
 iostream
 -
 fstream
 -
-ncurses.h
-/Users/michailalmyros/CLionProjects/pacman/ncurses.h
+sstream
+-
 
 /Users/michailalmyros/CLionProjects/pacman/main.cpp
 cstdlib

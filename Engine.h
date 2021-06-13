@@ -2,28 +2,27 @@
 #define PACMAN_ENGINE_H
 
 #include <string>
+#include <cstdlib>
 #include <iostream>
 #include <fstream>
-#include "ncurses.h"
+#include <sstream>
 
 using namespace std;
-
-const int MAX_GEMS = 10;
 
 class Engine {
 
 public:
     Engine();
 
-    std::string levelName;
+    static void generateLevel();
 
-    void printLevels();
+    static string generateRows();
 
-    void getUserLevelInput();
+    static string addItemToMap(string &map, char item);
 
-    void loadLevel();
+    static void saveMap(const string& level);
 
-    void run();
+    static string generateMap();
 };
 
 
